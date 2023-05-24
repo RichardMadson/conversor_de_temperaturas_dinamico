@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor dinamica</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="tinycolor.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="#">
+
+        <fieldset>
+            <input type="radio" name="escala" id="celsius" value="celsius" checked>
+            <label for="celsius">ºC</label>
+            <input type="radio" name="escala" id="farenheit" value="farenheit">
+            <label for="farenheit">ºF</label>
+            <input type="radio" name="escala" id="kelvin" value="kelvin">
+            <label for="kelvin">K</label>
+        </fieldset>
+
+        <input id="temperatura" type="number" placeholder="Digite a temperatura">
+
+        <input id="temp2" type="range">
+
+        <input type="button" value="Converter" onclick="converterTemperaturas()" onclick="gerarCor(temp_celsius)">
+    </form>
+
+    <section id="valores">
+        <div id="valor_celsius">
+            <h5>Celsius</h5>
+        </div>
+        <div id="valor_farenheit">
+            <h5>Farenheit</h5>
+        </div>
+        <div id="valor_kelvin">
+            <h5>Kelvin</h5>
+        </div>
+    </section>
+</body>
+</html>
